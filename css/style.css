@@ -493,16 +493,13 @@ button {
 .section {
   padding-top: 96px;
   padding-bottom: 96px;
-  max-width: 320px;
 }
 .features {
   margin: 0 auto;
 }
 .features-list {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 72px;
 }
 .svg-icons {
@@ -532,15 +529,12 @@ button {
   .section {
     padding-top: 96px;
     padding-bottom: 96px;
-    max-width: 768px;
   }
   .container {
-    width: 736px;
     margin: 0 auto;
     padding: 0;
   }
   .features {
-    max-width: 736px;
     margin-left: 16px;
     margin: 0 auto;
   }
@@ -550,6 +544,8 @@ button {
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 72px;
+    width: 736px;
+    margin: auto;
   }
   .features-list-item {
     width: calc((100% - 24px) / 2);
@@ -567,7 +563,6 @@ button {
 }
 @media screen and (min-width: 1158px) {
   .features {
-    max-width: 1158px;
     margin: 0 auto;
   }
   .section {
@@ -599,6 +594,7 @@ button {
     display: flex;
     flex-direction: row;
     gap: 24px;
+    width: 1158px;
   }
   .svg-icons {
     border: 1px solid #8e8f99;
@@ -639,11 +635,7 @@ button {
   background: #f4f4fd;
   margin: auto;
 }
-.container .team-container {
-  width: 320px;
-  margin: auto;
-  padding: 0;
-}
+
 .section .team-container {
   text-align: center;
   gap: 74px;
@@ -681,7 +673,6 @@ button {
   text-align: center;
   padding-bottom: 32px;
   margin-top: 32px;
-  width: 232px;
   gap: 8px;
 }
 .team-svg-list {
@@ -731,7 +722,6 @@ button {
   .section {
     padding-top: 96px;
     padding-bottom: 96px;
-    max-width: 768px;
   }
   .team {
     margin: 0 auto;
@@ -757,21 +747,17 @@ button {
   .team-container {
     padding-bottom: 0;
     text-align: center;
-    margin: 0;
-    width: 100%;
   }
 }
 @media screen and (min-width: 1158px) {
   .section {
     padding-top: 120px;
     padding-bottom: 120px;
-    max-width: 1440px;
   }
 
   .container {
     padding-left: 0;
     padding-right: 0;
-    width: 1158px;
     margin: auto;
   }
   .team-list {
@@ -807,13 +793,11 @@ button {
 /*portfolio*/
 .section {
   margin: 0 auto;
-  max-width: 320px;
 }
 .overlay {
   display: none;
 }
 .container .portfolio-container {
-  width: 288px;
   margin: auto;
   padding: 0;
 }
@@ -858,10 +842,8 @@ button {
   .section {
     padding-top: 96px;
     padding-bottom: 96px;
-    max-width: 768px;
   }
   .container .portfolio-container {
-    width: 736px;
     margin: auto;
   }
   .portfolio {
@@ -884,7 +866,6 @@ button {
   .section {
     padding-top: 120px;
     padding-bottom: 120px;
-    max-width: 1440px;
   }
 
   .portfolio {
@@ -942,13 +923,11 @@ button {
 /*footer*/
 .section {
   margin: 0 auto;
-  max-width: 320px;
 }
 .footer {
   margin: auto;
 }
 .container .footer-container {
-  width: 288px;
   margin: auto;
   padding: 0;
 }
@@ -960,7 +939,6 @@ button {
 .container-footer {
   margin: 0;
   margin-bottom: 72px;
-  max-width: 288px;
 }
 .footer-logo {
   display: flex;
@@ -1194,8 +1172,6 @@ button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #2e2f42;
 }
-.checkbox-area {
-}
 .visually-hidden {
   opacity: 0;
   position: absolute;
@@ -1343,7 +1319,6 @@ input:checked + label > span {
   .section {
     padding-top: 96px;
     padding-bottom: 96px;
-    max-width: 768px;
   }
   .footer {
     margin: auto;
@@ -1408,13 +1383,11 @@ input:checked + label > span {
   .section {
     padding-top: 120px;
     padding-bottom: 120px;
-    max-width: 1440px;
   }
   .footer {
     margin: auto;
   }
   .container {
-    width: 1158px;
     margin: auto;
   }
   .footer {
