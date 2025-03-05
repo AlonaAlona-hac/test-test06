@@ -973,9 +973,6 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 288px;
-  padding-left: 0;
-  padding-right: 0;
 }
 .fotter-social-links {
   max-width: 208px;
@@ -1341,9 +1338,8 @@ input:checked + label > span {
     max-width: 264px;
   }
   .footer-content {
-    gap: 24px;
+    column-gap: 24px;
     justify-content: left;
-    width: 768px;
   }
   .fotter-social-links {
     max-width: 208px;
@@ -1409,11 +1405,12 @@ input:checked + label > span {
   .footer-content {
     display: flex;
     align-items: baseline;
-    width: 1128px;
+    gap: 0;
   }
   .fotter-social-links {
     max-width: 208px;
     margin-bottom: 0;
+    margin-right: 80px;
   }
   .modal {
     width: 408px;
@@ -1422,7 +1419,7 @@ input:checked + label > span {
   .subscribe-container {
     width: 453px;
     height: 80px;
-    margin-left: auto;
+    margin: 0;
   }
   .subscribe-form {
     display: flex;
